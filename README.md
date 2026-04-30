@@ -20,4 +20,5 @@ https://groks-calculator.netlify.app
 
 ## Author
 
+GROKS
 Built as part of a mentorship assignment.
