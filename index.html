@@ -5,43 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="calculator.css">
   <title>Calculator</title>
-
- 
 </head>
-
 <body>
 
   <div class="calculator">
-    <input type="text" class="display" id="display" disabled>
+    <!-- Removed 'disabled' so the cursor works; added 'inputmode' to prevent mobile keyboards -->
+    <input type="text" class="display" id="display" inputmode="none" autocomplete="off">
 
     <div class="buttons">
+      <!-- Row 1 -->
       <button class="clear">C</button>
+      <button class="backspace">⌫</button>
+      <button>%</button>
       <button>/</button>
-      <button>*</button>
-      <button>-</button>
 
+      <!-- Row 2 -->
+      <button>𝑥²</button>
+      <button class="root-btn"><span class="radical">²√𝑥</span><span class="bar"></span></button>
+      <button>¹⁄𝑥</button>
+      <button>*</button>
+
+      <!-- Row 3 -->
       <button>7</button>
       <button>8</button>
       <button>9</button>
-      <button>+</button>
+      <button>-</button>
 
+      <!-- Row 4 -->
       <button>4</button>
       <button>5</button>
       <button>6</button>
-      <button>.</button>
+      <button>+</button>
 
+      <!-- Row 5 -->
       <button>1</button>
       <button>2</button>
       <button>3</button>
-      <button class="equal">=</button>
+      <button class="pm-fraction"><sup>+</sup>&frasl;<sub>&minus;</sub></button>
 
+      <!-- Row 6 -->
       <button>0</button>
+      <button>.</button>
+      <button class="equal-btn">=</button> 
     </div>
   </div>
 
-  <script src="calculator.js">
-   
-  </script>
-
+  <script src="calculator.js"></script>
 </body>
 </html>

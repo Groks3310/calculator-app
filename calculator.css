@@ -26,6 +26,7 @@ body {
       border-radius: 10px;
       background: #111;
       color: #fff;
+      margin-left: -10.5px;
     }
 
     .buttons {
@@ -61,3 +62,40 @@ body {
     .clear {
       background: #dc3545;
     }
+    .root-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radical {
+  font-size: 1.2rem;
+}
+
+.bar {
+  width: 13px;
+  height: 1.2px;
+  background-color: currentColor; /* Matches the text color */
+  margin-top: -22px; /* Moves the line to the top of the checkmark */
+  margin-left: -10.5px;
+}
+.pm-fraction {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.pm-fraction sup {
+    font-size: 0.7em;
+    vertical-align: super;
+    margin-right: 2px;
+    margin-top: -13px; /* Pulls it closer to the slash */
+}
+
+.pm-fraction sub {
+    font-size: 0.7em;
+    vertical-align: sub;
+    margin-left: 2px;
+    margin-top: 10px; /* Pulls it closer to the slash */
+}
